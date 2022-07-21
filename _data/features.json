@@ -1,27 +1,36 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "University of Seville",
+    "description": "The university of Seville is currently providing support for the core and the pysat plugins.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "images/features/us.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "University of Málaga",
+    "description": "The university of Malaga is currently providing support for the core and the bdd plugins.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
+      "url": "images/features/uma.png",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "University of Graz",
+    "description": "The university of Graz is currently providing support for the operations regarding the explaination of errors in feature modeling.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "images/features/tu_graz.png",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Universidad a distancia",
+    "description": "The UNED is currently providing support for the implementation of BDD techniques that cope with colosal feature models.",
+    "image": {
+      "url": "images/features/uned.jpg",
       "width": 80,
       "height": 80
     }

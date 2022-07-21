@@ -4,13 +4,11 @@ layout: contact
 description: Contact
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Do not hessitate to join us in our Telegram group if you need some support. Also, the issue tracker is up and running for any bug or feature request you might have. 
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
-| Saturday  | Closed          |
+You can create issues following for the issues you find in the following directions:
+
+* For any general request or bug, please head on to: https://github.com/flamapy/core/issues
+* For any feature modelling related problem head to: https://github.com/flamapy/fm_metamodel/issues
+* For sat based operations, please create an issue here: https://github.com/flamapy/pysat_metamodel/issues
+* For bdd based operations, please refer to: https://github.com/flamapy/bdd_metamodel/issues

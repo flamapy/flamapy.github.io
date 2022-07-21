@@ -7,6 +7,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Meet The Team
+# Partners involved in development
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+Each expert is contributing on its field of expertise, thus enabling a mudular analysis tool that can adapt to different needs
