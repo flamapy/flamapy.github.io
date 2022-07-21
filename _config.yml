@@ -1,4 +1,5 @@
 baseurl: '/'
+url: 'https://flamapy.github.io/'
 permalink: pretty
 title: 'Flama'
 
