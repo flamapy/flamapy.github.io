@@ -14,7 +14,10 @@ main:
   - name: "Contact"
     url: "/contact/"
     weight: 6
-
+  - name: "Github repos"
+    url: "https://www.github.com/flamapy/"
+    weight: 7
+    
 footer:
   - name: "Home"
     url: "/"
