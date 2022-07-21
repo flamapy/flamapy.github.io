@@ -26,6 +26,7 @@ bodyClass: "page-home"
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_services | default: 6 %}
       {% for service in site.services limit: limit %}
+      {% if service.promoted %}
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
@@ -36,6 +37,7 @@ bodyClass: "page-home"
           </div>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
     <div class="row justify-content-center">
