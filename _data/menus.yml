@@ -2,7 +2,7 @@ main:
   - name: "Plugins"
     url: "/services/"
     weight: 2
-  - name: "Team"
+  - name: "Teams"
     url: "/team/"
     weight: 3
   - name: "Documentation"
