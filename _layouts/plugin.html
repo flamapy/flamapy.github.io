@@ -2,11 +2,31 @@
 layout: default
 bodyClass: "page-service"
 ---
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+axios.get('https://api.github.com/repos/flamapy/core/contributors?anon=1')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+    contributors=response.data
+    for (var contributor of contributors) 
+    {
+      document.write(contributor["avatar_url"] + "<br />");
+    }
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+</script>
+
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
+        <div class="contributors"></div>
         <h1 class="title">{{page.title}}</h1>
         <div class="content">{{content}}</div>
       </div>

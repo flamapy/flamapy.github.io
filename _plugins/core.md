@@ -3,6 +3,7 @@ title: "Core"
 date: 2018-11-18T12:33:46+10:00
 weight: 1
 promoted: true
+proyect_url: "https://www.github.com/flamapy/core"
 ---
 
 The core component is the main entry point of Flama
