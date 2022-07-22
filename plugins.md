@@ -1,6 +1,6 @@
 ---
 title: Plugins
-layout: services
+layout: plugins
 description: Plugins
 intro_image: "images/illustrations/simplified_aafm.png"
 intro_image_absolute: false

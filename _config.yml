@@ -12,10 +12,10 @@ logo:
   desktop_width: "120px"
 
 home: 
-  limit_services: 6
+  limit_plugins: 6
 
 collections:
-  services:
+  plugins:
     output: true
     sort_by: weight
   team:
@@ -24,9 +24,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "plugins"
     values:
-      layout: "service"
+      layout: "plugin"
   - scope:
       path: ""
       type: "team"

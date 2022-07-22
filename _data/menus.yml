@@ -1,6 +1,9 @@
 main:
+  - name: "Github"
+    url: "https://www.github.com/flamapy/"
+    weight: 1
   - name: "Plugins"
-    url: "/services/"
+    url: "/plugins/"
     weight: 2
   - name: "Teams"
     url: "/team/"
@@ -8,15 +11,13 @@ main:
   - name: "Documentation"
     url: "https://flamapy.github.io/docs/"
     weight: 4
-  - name: "About"
-    url: "/about/"
-    weight: 5
   - name: "Contact"
     url: "/contact/"
+    weight: 5
+  - name: "About"
+    url: "/about/"
     weight: 6
-  - name: "Github"
-    url: "https://www.github.com/flamapy/"
-    weight: 7
+
     
 footer:
   - name: "Home"
