@@ -1,18 +1,21 @@
 main:
-  - name: "Github"
-    url: "https://www.github.com/flamapy/"
-    weight: 1
-  - name: "Plugins"
-    url: "/plugins/"
-    weight: 2
-  - name: "Teams"
-    url: "/team/"
-    weight: 3
   - name: "Documentation"
     url: "https://flamapy.github.io/docs/"
-    weight: 4
-  - name: "Try it in Google collab"
+    weight: 1
+  - name: "Flama in collab"
     url: "https://colab.research.google.com/drive/1ktuEn2KAqv7dbzeHQc-G_kUxUEW-n_av?usp=sharing"
+    weight: 2
+  - name: "Flama FM Dist in collab"
+    url: https://colab.research.google.com/drive/1moSXdK3thM44UIV6NVF3RfjtMxhJLzfs?usp=sharing
+    weught: 2
+  - name: "Github"
+    url: "https://www.github.com/flamapy/"
+    weight: 3
+  - name: "Plugins"
+    url: "/plugins/"
+    weight: 3
+  - name: "Teams"
+    url: "/team/"
     weight: 4
   - name: "Contact"
     url: "/contact/"

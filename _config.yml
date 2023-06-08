@@ -18,6 +18,9 @@ collections:
   plugins:
     output: true
     sort_by: weight
+  distributions:
+    output: true
+    sort_by: weight
   team:
     output: true
 
@@ -27,6 +30,11 @@ defaults:
       type: "plugins"
     values:
       layout: "plugin"
+  - scope:
+      path: ""
+      type: "distributions"
+    values:
+      layout: "distribution"
   - scope:
       path: ""
       type: "team"
