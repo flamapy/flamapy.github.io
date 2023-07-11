@@ -7,6 +7,7 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <a href="{{ "trys" | relative_url }}" class="button" style="margin-left:10%;width:80%;text-align: center;font-weight: bold;margin-bottom: 40pt;">Try it online!!</a>
         {{ content }}
         {% if page.show_call_box %}
           {% include call.html show_button=true %}
@@ -24,7 +25,7 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <h2 class="service-title">
-    Distributions
+    <a href="{{ "distributions" | relative_url }}">Distributions</a>
     </h2>
     <div class="row justify-content-start">
       {% for distribution in site.distributions %}
@@ -48,7 +49,7 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <h2 class="service-title">
-    Plugins
+      <a href="{{ "plugins" | relative_url }}">Plugins</a>
     </h2>
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_plugins | default: 6 %}

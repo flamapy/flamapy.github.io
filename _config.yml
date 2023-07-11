@@ -21,6 +21,9 @@ collections:
   distributions:
     output: true
     sort_by: weight
+  trys:
+    output: true
+    sort_by: weight
   team:
     output: true
 
@@ -35,6 +38,11 @@ defaults:
       type: "distributions"
     values:
       layout: "distribution"
+  - scope:
+      path: ""
+      type: "trys"
+    values:
+      layout: "try"
   - scope:
       path: ""
       type: "team"
