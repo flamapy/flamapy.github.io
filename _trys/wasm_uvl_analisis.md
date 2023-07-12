@@ -39,7 +39,7 @@ features
 			CheesyCrust
 
 constraints
-	CheesyCrust => Big"
+	CheesyCrust => Big
 </textarea>
 </div>
 <div>
@@ -101,7 +101,11 @@ from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
 fm = FLAMAFeatureModel("uvlfile.uvl")
 result=fm.valid()
 
-div.innerHTML = result
+div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
+exists=js.document.getElementById('deleteme')
+if(exists):
+	exists.remove()
+
 js.document.getElementById('result').append(div)
 		  `);
         } catch (err) {
@@ -141,8 +145,12 @@ from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
 
 fm = FLAMAFeatureModel("uvlfile.uvl")
 result=fm.products()
+result = "<br>".join([f'P({i}): {p}' for i, p in enumerate(result, 1)])
+div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
+exists=js.document.getElementById('deleteme')
+if(exists):
+	exists.remove()
 
-div.innerHTML = result
 js.document.getElementById('result').append(div)
 		  `);
         } catch (err) {
@@ -184,7 +192,10 @@ from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
 fm = FLAMAFeatureModel("uvlfile.uvl")
 result=fm.products_number()
 
-div.innerHTML = result
+div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
+exists=js.document.getElementById('deleteme')
+if(exists):
+	exists.remove()
 js.document.getElementById('result').append(div)
 		  `);
         } catch (err) {
