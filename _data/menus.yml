@@ -2,12 +2,6 @@ main:
   - name: "Documentation"
     url: "https://flamapy.github.io/docs/"
     weight: 1
-  - name: "Flama in collab"
-    url: "https://colab.research.google.com/drive/1ktuEn2KAqv7dbzeHQc-G_kUxUEW-n_av?usp=sharing"
-    weight: 2
-  - name: "Flama FM Dist in collab"
-    url: https://colab.research.google.com/drive/1moSXdK3thM44UIV6NVF3RfjtMxhJLzfs?usp=sharing
-    weught: 2
   - name: "Github"
     url: "https://www.github.com/flamapy/"
     weight: 3
