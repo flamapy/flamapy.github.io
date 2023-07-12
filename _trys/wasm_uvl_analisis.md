@@ -9,10 +9,9 @@ layout: try
 ## Webassembly Flama version enables UVL analysis.
 
 ![Web assembly](/images/illustrations/web_assembly.png)
+WebAssembly (often abbreviated as wasm) is a binary instruction format designed for web browsers. It is a low-level, compact, and portable format that allows developers to run code written in programming languages other than JavaScript in web browsers. WebAssembly is supported by all major web browsers, including Chrome, Firefox, Safari, and Edge. It acts as a virtual machine or container runtime. Flama provides a version of all its components and the SAT solver, who can rely on provide. With this in mind, we have created a simple website to execute some operations directly in your browser. Note that the analysis, in this case, is covered by you when loading this website. 
 
-WebAssembly (often abbreviated as wasm) is a binary instruction format designed for web browsers. It is a low-level, compact, and portable format that allows developers to run code written in programming languages other than JavaScript in web browsers. WebAssembly is supported by all major web browsers, including Chrome, Firefox, Safari, and Edge. It basically acts as a virtual machine or container runtime. Flama, provides a version of all its components and the SAT solver which can rely on pyodide.  With this in mind, we have created a simmple website to execute some operations diectly in your browser. Note that the analysis in this case is cover by you when loading this website. 
-
-Note that the code of this website is not intended to be elegant but to provide insigts on how to use the tool in a webassembly enviroment. 
+Note that the code of this website is not intended to be elegant but to provide insights on how to use the tool in a web assembly environment.
 <div>
 The textarea below is intented to write a UVL file than can be later analyzed
 <textarea id="uvlfile" style="width: 100%;" rows="20">
