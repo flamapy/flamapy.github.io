@@ -75,12 +75,15 @@ constraints
       await pyodide.loadPackage("micropip");
       const micropip = pyodide.pyimport("micropip");
 		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-      await micropip.install("uvlparser");
-      await micropip.install("flamapy-fm");
-      await micropip.install("flamapy-sat");
+			await micropip.install("uvlparser==1.0.2");
+			await micropip.install("afmparser==1.0.0");
+
 			await pyodide.runPythonAsync(`
 import micropip
 await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
+await micropip.install("flamapy==1.1.3", deps=False);
+await micropip.install("flamapy-fm==1.1.3", deps=False);
+await micropip.install("flamapy-sat");
 `)
 		hideLoading()
 
@@ -120,12 +123,15 @@ js.document.getElementById('result').append(div)
       await pyodide.loadPackage("micropip");
       const micropip = pyodide.pyimport("micropip");
 		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-      await micropip.install("uvlparser");
-      await micropip.install("flamapy-fm");
-      await micropip.install("flamapy-sat");
+			await micropip.install("uvlparser==1.0.2");
+			await micropip.install("afmparser==1.0.0");
+
 			await pyodide.runPythonAsync(`
 import micropip
 await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
+await micropip.install("flamapy==1.1.3", deps=False);
+await micropip.install("flamapy-fm==1.1.3", deps=False);
+await micropip.install("flamapy-sat");
 `)
 		hideLoading()
 
@@ -161,17 +167,20 @@ js.document.getElementById('result').append(div)
 
 
 	  async function numberofproducts() {
-			showLoading()
+						showLoading()
       let pyodide = await loadPyodide();
       await pyodide.loadPackage("micropip");
       const micropip = pyodide.pyimport("micropip");
 		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-      await micropip.install("uvlparser");
-      await micropip.install("flamapy-fm");
-      await micropip.install("flamapy-sat");
+			await micropip.install("uvlparser==1.0.2");
+			await micropip.install("afmparser==1.0.0");
+
 			await pyodide.runPythonAsync(`
 import micropip
 await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
+await micropip.install("flamapy==1.1.3", deps=False);
+await micropip.install("flamapy-fm==1.1.3", deps=False);
+await micropip.install("flamapy-sat");
 `)
 		hideLoading()
 
