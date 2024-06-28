@@ -12,13 +12,12 @@ nav_order: 3
 
 WebAssembly (often abbreviated as WASM) is a binary instruction format designed for web browsers. It is a low-level, compact, and portable format that allows developers to run code written in programming languages other than JavaScript in web browsers. WebAssembly is supported by all major web browsers, including Chrome, Firefox, Safari, and Edge. It acts as a virtual machine or container runtime. {% include flamapy.html %} provides a version of all its components and the SAT solver, who can rely on provide. With this in mind, we have created a simple website to execute some operations directly in your browser. Note that the analysis, in this case, is covered by you when loading this website. 
 
-{: .important-title }
-> Note
-> 
-> The code of this website is not intended to be elegant but to provide insights on how to use the tool in a WebAssembly environment
+## Custom UVL
+
+The textarea below is intented to write a UVL file than can be later analyzed:
 
 <div>
-The textarea below is intented to write a UVL file than can be later analyzed
+
 
 <textarea id="uvlfile" style="width: 100%;" rows="20">
 namespace Pizza
