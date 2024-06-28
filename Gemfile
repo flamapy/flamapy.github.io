@@ -1,5 +1,8 @@
 source "https://rubygems.org"
+gemspec
 
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.2"
-gem "jekyll-environment-variables"
+gem "jekyll-github-metadata", ">= 2.15"
+
+gem "jekyll-include-cache", group: :jekyll_plugins
+
+gem "html-proofer", "~> 5.0", :group => :development
