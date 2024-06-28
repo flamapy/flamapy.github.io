@@ -1,5 +1,5 @@
 
-# flamapy-landing-page
+# flamapy.github.io
 
 ```
 docker compose up -d --build
