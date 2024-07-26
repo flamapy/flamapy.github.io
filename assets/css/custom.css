@@ -77,3 +77,23 @@
   height: 100vh;
   text-align: center;
 }
+
+.entities-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.entity {
+  margin: 10px;
+  flex: 1 1 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entity img {
+  max-height: 150px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}

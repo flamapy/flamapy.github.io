@@ -29,12 +29,39 @@ The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAF
 
 * **PySAT Integration**: Utilizes the PySAT metasolver, offering access to more than ten distinct solvers. This diversity allows for optimal solution finding across various complex scenarios.
 
+* **BDD solver**: This plugin supports Binary Decision Diagrams (BDDs) representations for feature models along with an advanced solver that provides output for operations such as product distribution, sampling and feature inclusion probability.
+
 ### <i class="fa-brands fa-searchengin"></i> Comprehensive Operations
 
 * **Multi-Model Operations**: Designed with capabilities for handling complex multi-model operations similar to those in Familiar.
 * **Single-Model Focus**: Also supports operations targeted at single-model scenarios, providing versatility in usage.
+* **Several Years of Operations**: Comprehensive Operations include all the operations developed over the past 20 years, ensuring a robust and extensive feature set.
+
+  Examples of operations include:
+  - **Dead features**: Identify features that are no longer in use.
+  - **Void features**: Determine if a feature model is void. A feature model is considered void if it represents no products, often due to incorrect usage of cross-tree constraints.
+  - **Valid product**: Validate whether a product (i.e., a set of features) belongs to the set of products represented by a feature model. This involves checking if the product conforms to the constraints and structure of the feature model.
+  - **All products**: Generate a complete list of all products.
+  - **Filter**: This operation takes as input a feature model and a configuration (potentially partial) and returns the set of products including the input configuration that can be derived from the model. Note that this operation does not modify the feature model itself.
 
 {: .fs-6 .fw-300 }
+
+## Entities involved
+
+<div class="entities-container">
+  <a href="https://www.us.es/" target="_blank" class="entity">
+    <img src="/assets/images/university_of_seville.svg" alt="University of Seville">
+  </a>
+  <a href="https://www.uma.es/" target="_blank" class="entity">
+    <img src="/assets/images/university_of_malaga.svg" alt="University of Malaga">
+  </a>
+  <a href="https://www.uni-graz.at/en/" target="_blank" class="entity">
+    <img src="/assets/images/university_of_graz.svg" alt="University of Graz">
+  </a>
+  <a href="https://www.uned.es/" target="_blank" class="entity">
+    <img src="/assets/images/uned.jpg" alt="UNED">
+  </a>
+</div>
 
 
 
