@@ -26,17 +26,16 @@ The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAF
 * **Variability in Models**: Initially supports cardinality-based feature models, with the flexibility to easily incorporate other types like attributed feature models.
 
 ### <i class="fa-solid fa-life-ring"></i> Robust Solver Support
-
 * **PySAT Integration**: Utilizes the PySAT metasolver, offering access to more than ten distinct solvers. This diversity allows for optimal solution finding across various complex scenarios.
 
-* **BDD solver**: This plugin supports Binary Decision Diagrams (BDDs) representations for feature models along with an advanced solver that provides output for operations such as product distribution, sampling and feature inclusion probability.
+* **BDD Integration**: Utilizes the CU-BDD metasolver, offering efficient variability model analysis for some operations. 
 
-### <i class="fa-brands fa-searchengin"></i> Comprehensive Operations
+### <i class="fa-brands fa-searchengin"></i> Easy to use, easy to integrate
 
-* **Multi-Model Operations**: Designed with capabilities for handling complex multi-model operations similar to those in Familiar.
-* **Single-Model Focus**: Also supports operations targeted at single-model scenarios, providing versatility in usage.
-* **Several Years of Operations**: Comprehensive Operations include all the operations developed over the past 20 years, ensuring a robust and extensive feature set.
-
+* **Easy-to-usa facade**: Designed with capabilities to analyse modes in python with just a line of code.
+* **Command line direct use**: Easy to inegrate in any ecosystem.
+* **WASM support**: Run analysis in your browser. Currently, both flamapy and pysat are wasm compatible. Enable analysis with 0 configuration process.
+* **REST/SWAGGER available**: Integrate the tool in yours by means of a robust backend Rest API.
   Examples of operations include:
   - **Dead features**: Identify features that are no longer in use.
   - **Void features**: Determine if a feature model is void. A feature model is considered void if it represents no products, often due to incorrect usage of cross-tree constraints.
