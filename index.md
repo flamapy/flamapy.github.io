@@ -57,8 +57,8 @@ Examples of operations include:
 #### **Dead features**
 Identify features that are no longer in use.
 
-#### **Void features**
-Determine if a feature model is void. A feature model is considered void if it represents no products, often due to incorrect usage of cross-tree constraints.
+#### **Core features**
+Identifies features that are present in all valid configurations of the feature model. 
 
 #### **Valid product**
 Validate whether a product (i.e., a set of features) belongs to the set of products represented by a feature model. This involves checking if the product conforms to the constraints and structure of the feature model.
