@@ -25,6 +25,11 @@ We have designed a section where you can test the different analysis operations 
 
 [Try it online]({{site.baseurl}}/try-it/wasm-uvl-analysis){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
 
+## Consume a rest API
+We have deployed a backend solver api, documented useing swagger in the onRender free tier.
+
+[Try it online](https://flamapy-rest.onrender.com)
+
 ## Google Colab
 
 Google Colab, short for Google Colaboratory, is a cloud-based development environment provided by Google. It offers a Jupyter notebook interface that allows users to write and execute Python code directly in a web browser, eliminating the need for local installations or setups.
