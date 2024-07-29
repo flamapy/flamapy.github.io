@@ -24,7 +24,7 @@ The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAF
 ### Plugin generator
 Simplifies the process of creating new plugins with a semi-automatic generator, making customization and expansion straightforward.
 
-### Variability in models
+### Variability modelling in the wild
 Initially supports cardinality-based feature models, with the flexibility to easily incorporate other types like attributed feature models.
 
 # <i class="fa-solid fa-life-ring"></i> Robust solver support
@@ -39,7 +39,7 @@ Utilizes the CU-BDD metasolver, offering efficient variability model analysis fo
 # <i class="fa-solid fa-laptop-code"></i> Easy to use, easy to integrate
 
 ### Easy-to-use python facade
-Designed with capabilities to analyse modes in python with just a line of code.
+Designed with capabilities to analyse modes in Python with just a line of code.
 
 ### Command line direct use
 Easy to integrate in any ecosystem.
