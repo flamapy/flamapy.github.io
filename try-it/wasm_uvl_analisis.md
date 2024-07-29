@@ -70,7 +70,7 @@ constraints
     LOW => !Backup</textarea>
 
 <div>
-	<button class="operation" onclick="flamapy('configurations')" disabled>Get products</button>
+	<button class="operation" onclick="flamapy('configurations')" disabled>Get configurations</button>
 	<button class="operation" onclick="flamapy('satisfiable')" disabled>Is satisfiable?</button>
 	<button class="operation" onclick="flamapy('configurations_number')" disabled>How many products there are?</button>
 	<button class="operation" onclick="flamapy('atomic_sets')" disabled>atomic_sets</button>
