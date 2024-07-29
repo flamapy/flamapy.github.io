@@ -18,9 +18,9 @@ This iframe is loading an entire Python terminal being run in your browser, with
 When loaded, try to execute the following code:
 
 ```
-from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
-fm = FLAMAFeatureModel("./tutorial-main/models/pizzas/pizzas.uvl")
-result=fm.products() 
+from flamapy.interfaces.python.flamapy_feature_model import FLAMAFeatureModel
+fm = FLAMAFeatureModel("./valid_model.uvl")
+result=fm.satisfiable()
 print(result)
 ```
 

@@ -16,205 +16,87 @@ WebAssembly (often abbreviated as WASM) is a binary instruction format designed 
 
 The textarea below is intented to write a UVL file than can be later analyzed:
 
+{: .important }
+> Currenlty this website does not support linter in the text area. Take a look con dev console if there is any parsing error of your text (tabs are difficult to be writen in a browser)
+
 <div>
 
 
 <textarea id="uvlfile" style="width: 100%;" rows="20">
-namespace Pizza
-
 features
-	Pizza {abstract}	
-		mandatory
-			Topping	
-				or
-					Salami
-					Ham
-					Mozzarella
-			Size	
-				alternative
-					Normal
-					Big
-			Dough	
-				alternative
-					Neapolitan
-					Sicilian
-
-		optional
-			CheesyCrust
-
+    eCommerce { abstract }
+        mandatory
+            Server { abstract }
+                mandatory
+                    PHP
+                        mandatory
+                            v74
+                    Storage
+                        alternative
+                            LOW
+                            ENOUGH
+            Web { abstract }
+                mandatory
+                    Catalog
+                    Search
+                        alternative
+                            BASIC
+                            ADVANCED
+                    Shopping 
+                        mandatory
+                            Cart
+                            Payment
+                                or
+                                    PayPal
+                                    CreditCard
+                                    Mobile
+                    Security
+                        alternative
+                            HIGH
+                            STANDARD
+                optional
+                    Backup
+                    Marketing
+                        optional
+                            SEO
+                            Socials
+                                or
+                                    Twitter
+                                    Facebook
+                                    YouTube
 constraints
-	CheesyCrust => Big
-</textarea>
-</div>
-<div>
-<button type="button" name="button" class="btn" onclick="products()" style="margin-right: 10px">Get products</button>
-<button type="button" name="button" class="btn" onclick="valid()" style="margin-right: 10px">Is a valid model?</button>
-<button type="button" name="button" class="btn" onclick="numberofproducts()">What's the number of products?</button>
+    CreditCard => HIGH
+    Mobile => HIGH
+    LOW => !Backup</textarea>
 
-</div>
 <div>
-<h2>The output is:</h2>
-<div id="loading" style="display:none;"><img SRC="/assets/images/loading.gif" width=100px> Loading, more details in the javascript console </div> 
-<div id="result"><div id="loading" style="display:none;">  
+	<button class="operation" onclick="flamapy('configurations')" disabled>Get products</button>
+	<button class="operation" onclick="flamapy('satisfiable')" disabled>Is satisfiable?</button>
+	<button class="operation" onclick="flamapy('configurations_number')" disabled>How many products there are?</button>
+	<button class="operation" onclick="flamapy('atomic_sets')" disabled>atomic_sets</button>
+	<button class="operation" onclick="flamapy('average_branching_factor')" disabled>average_branching_factor</button>
+	<button class="operation" onclick="flamapy('count_leafs')" disabled>count_leafs</button>
+	<button class="operation" onclick="flamapy('estimated_number_of_configurations')" disabled>estimated_number_of_configurations</button>
+	<button class="operation" onclick="flamapy('leaf_features')" disabled>leaf_features</button>
+	<button class="operation" onclick="flamapy('max_depth')" disabled>max_depth</button>
+	<button class="operation" onclick="flamapy('core_features')" disabled>core_features</button>
+	<button class="operation" onclick="flamapy('dead_features')" disabled>dead_features</button>
+	<button class="operation" onclick="flamapy('false_optional_features')" disabled>false_optional_features</button>
+</div>
 
+<div>
+	<h2>The output is:</h2>
+	<div id="loading" style="display:none;"><img src="loading.gif" width="100px" /> Loading, more details in the javascript console </div> 
+	<div id="result"><div id="loading" style="display:none;"></div></div>
 </div>
-</div>
+
 </div>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
-
-<script type="text/javascript">
-	  const uvlfile = document.getElementById("uvlfile");
-
-		function showLoading(){
-			document.getElementById("loading").style.display = "initial";
-		}
-		function hideLoading(){
-			document.getElementById("loading").style.display = "none";
-
-		}
-		
-	  async function valid() {
-			showLoading()
-      let pyodide = await loadPyodide();
-      await pyodide.loadPackage("micropip");
-      const micropip = pyodide.pyimport("micropip");
-		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-			await micropip.install("uvlparser==1.0.2");
-			await micropip.install("afmparser==1.0.0");
-
-			await pyodide.runPythonAsync(`
-import micropip
-await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
-await micropip.install("flamapy==1.1.3", deps=False);
-await micropip.install("flamapy-fm==1.1.3", deps=False);
-await micropip.install("flamapy-sat");
-`)
-		hideLoading()
-
-		try {
-          let output = pyodide.runPython(
-		  `
-import js
-
-file_content = js.document.getElementById('uvlfile').value
-div = js.document.createElement("result")
-
-with open("uvlfile.uvl", "w") as text_file:
-    print(file_content, file=text_file)
-
-from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
-
-fm = FLAMAFeatureModel("uvlfile.uvl")
-result=fm.valid()
-
-div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
-exists=js.document.getElementById('deleteme')
-if(exists):
-	exists.remove()
-
-js.document.getElementById('result').append(div)
-		  `);
-        } catch (err) {
-          console.log(err);
-        }
-			
-
-      }
-
- async function products() {
-			showLoading()
-      let pyodide = await loadPyodide();
-      await pyodide.loadPackage("micropip");
-      const micropip = pyodide.pyimport("micropip");
-		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-			await micropip.install("uvlparser==1.0.2");
-			await micropip.install("afmparser==1.0.0");
-
-			await pyodide.runPythonAsync(`
-import micropip
-await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
-await micropip.install("flamapy==1.1.3", deps=False);
-await micropip.install("flamapy-fm==1.1.3", deps=False);
-await micropip.install("flamapy-sat");
-`)
-		hideLoading()
-
-		try {
-          let output = pyodide.runPython(
-		  `
-import js
-
-file_content = js.document.getElementById('uvlfile').value
-div = js.document.createElement("result")
-
-with open("uvlfile.uvl", "w") as text_file:
-    print(file_content, file=text_file)
-
-from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
-
-fm = FLAMAFeatureModel("uvlfile.uvl")
-result=fm.products()
-result = "<br>".join([f'P({i}): {p}' for i, p in enumerate(result, 1)])
-div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
-exists=js.document.getElementById('deleteme')
-if(exists):
-	exists.remove()
-
-js.document.getElementById('result').append(div)
-		  `);
-        } catch (err) {
-          console.log(err);
-        }
-			
-
-      }
-
-
-	  async function numberofproducts() {
-						showLoading()
-      let pyodide = await loadPyodide();
-      await pyodide.loadPackage("micropip");
-      const micropip = pyodide.pyimport("micropip");
-		  await micropip.install("/assets/web_assembly/antlr4_python3_runtime-4.7.2-py3-none-any.whl");
-			await micropip.install("uvlparser==1.0.2");
-			await micropip.install("afmparser==1.0.0");
-
-			await pyodide.runPythonAsync(`
-import micropip
-await micropip.install("flamapy-fm-dist", deps=False)#this is to avoid problems with deps later on
-await micropip.install("flamapy==1.1.3", deps=False);
-await micropip.install("flamapy-fm==1.1.3", deps=False);
-await micropip.install("flamapy-sat");
-`)
-		hideLoading()
-
-		try {
-          let output = pyodide.runPython(
-		  `
-import js
-
-file_content = js.document.getElementById('uvlfile').value
-div = js.document.createElement("result")
-
-with open("uvlfile.uvl", "w") as text_file:
-    print(file_content, file=text_file)
-
-from flamapy.interfaces.python.FLAMAFeatureModel import FLAMAFeatureModel
-
-fm = FLAMAFeatureModel("uvlfile.uvl")
-result=fm.products_number()
-
-div.innerHTML = "<div id='deleteme'>"+str(result)+"</div>"
-exists=js.document.getElementById('deleteme')
-if(exists):
-	exists.remove()
-js.document.getElementById('result').append(div)
-		  `);
-        } catch (err) {
-          console.log(err);
-        }
-			
-
-      }
+<script src="wasm_uvl.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        preparare_WASM()
+        
+    });
 </script>
