@@ -28,7 +28,7 @@ We have designed a section where you can test the different analysis operations 
 ## Consume a rest API
 We have deployed a backend solver api, documented useing swagger in the onRender free tier.
 
-[Try it online](https://flamapy-rest.onrender.com)
+[Try it online](https://flamapy-rest.onrender.com){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
 
 ## Google Colab
 
