@@ -55,19 +55,19 @@ Integrate the tool in yours by means of a robust backend Rest API.
 Examples of operations include:
 
 #### **Dead features**
-Identify features that are no longer in use.
+Identifies features that cannot be included in any valid product configuration due to constraints and dependencies in the model.
 
 #### **Core features**
 Identifies features that are present in all valid configurations of the feature model. 
 
-#### **Valid product**
-Validate whether a product (i.e., a set of features) belongs to the set of products represented by a feature model. This involves checking if the product conforms to the constraints and structure of the feature model.
+#### **Estimated number of configurations**
+Provides an estimate of the total number of different configurations that can be produced from a feature model by considering all possible combinations of features.
 
-#### **All products**
-Generate a complete list of all products.
+#### **Atomic Sets**
+This operation identifies atomic sets in a feature model. An atomic set is a group of features that always appear together across all configurations of the model.
 
 #### **Filter**
-This operation takes as input a feature model and a configuration (potentially partial) and returns the set of products including the input configuration that can be derived from the model. Note that this operation does not modify the feature model itself.
+This operation filters and selects a subset of configurations based on specified criteria. It helps in narrowing down the possible products to those that meet certain requirements.
 
 {: .fs-6 .fw-300 }
 
