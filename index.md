@@ -55,7 +55,7 @@ Integrate the tool in yours by means of a robust backend Rest API.
 Examples of operations include:
 
 #### **Dead features**
-Identifies features that cannot be included in any valid configuration configuration due to constraints and dependencies in the model.
+Identifies features that cannot be included in any valid configuration due to constraints and dependencies in the model.
 
 #### **Core features**
 Identifies features that are present in all valid configurations of the feature model. 
