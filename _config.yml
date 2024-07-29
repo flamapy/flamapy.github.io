@@ -109,9 +109,7 @@ aux_links:
   "Try it":
     - "/try-it"
   "GitHub":
-    - "//github.com/flamapy/flamapy"
-  "Teams":
-    - "/teams"
+    - "//github.com/flamapy/"
   "Contact":
     - "/contact"
   
