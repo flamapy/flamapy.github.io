@@ -8,7 +8,7 @@ permalink: /
 
 ![Texto alternativo](/assets/images/flamapy_horizontal_logo_white.svg){: .center }
 
-The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAFM) using UVL and more with advanced multi-solver and multi-metamodel capabilities
+The cutting-edge Python-based tool for Automated Analysis of Feature Models using UVL and more
 {: .fs-6 .fw-500 .center-text} 
 
 <div class="center-buttons">
