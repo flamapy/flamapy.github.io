@@ -8,7 +8,7 @@ permalink: /
 
 ![Texto alternativo](/assets/images/flamapy_horizontal_logo_white.svg){: .center }
 
-The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAFM) with advanced multi-solver and multi-metamodel capabilities
+The cutting-edge Python-based tool for Automated Analysis of Feature Models using UVL and more
 {: .fs-6 .fw-500 .center-text} 
 
 <div class="center-buttons">
@@ -19,29 +19,55 @@ The cutting-edge Python-based tool for Automated Analysis of Feature Models (AAF
 
 ---
 
-### <i class="fa-solid fa-arrow-right"></i> Easily Extensible
+# <i class="fa-solid fa-puzzle-piece"></i> Easily extensible
+
+### Plugin generator
+Simplifies the process of creating new plugins with a semi-automatic generator, making customization and expansion straightforward.
+
+### Variability modelling in the wild
+Initially supports cardinality-based feature models, with the flexibility to easily incorporate other types like attributed feature models.
+
+# <i class="fa-solid fa-life-ring"></i> Robust solver support
+
+### PySAT integration
+Utilizes the PySAT metasolver, offering access to more than ten distinct solvers. This diversity allows for optimal solution finding across various complex scenarios.
+
+### BDD integration
+Utilizes the CU-BDD metasolver, offering efficient variability model analysis for some operations. 
 
 
-* **Plugin Generator**: Simplifies the process of creating new plugins with a semi-automatic generator, making customization and expansion straightforward.
-* **Variability in Models**: Initially supports cardinality-based feature models, with the flexibility to easily incorporate other types like attributed feature models.
+# <i class="fa-solid fa-laptop-code"></i> Easy to use, easy to integrate
 
-### <i class="fa-solid fa-life-ring"></i> Robust Solver Support
-* **PySAT Integration**: Utilizes the PySAT metasolver, offering access to more than ten distinct solvers. This diversity allows for optimal solution finding across various complex scenarios.
+### Easy-to-use python facade
+Designed with capabilities to analyse modes in Python with just a line of code.
 
-* **BDD Integration**: Utilizes the CU-BDD metasolver, offering efficient variability model analysis for some operations. 
+### Command line direct use
+Easy to integrate in any ecosystem.
 
-### <i class="fa-brands fa-searchengin"></i> Easy to use, easy to integrate
+### WASM support
+Run analysis in your browser. Currently, both {% include flamapy.html %} and PySAT are WASM compatible. Enable analysis with 0 configuration process.
 
-* **Easy-to-usa facade**: Designed with capabilities to analyse modes in python with just a line of code.
-* **Command line direct use**: Easy to inegrate in any ecosystem.
-* **WASM support**: Run analysis in your browser. Currently, both flamapy and pysat are wasm compatible. Enable analysis with 0 configuration process.
-* **REST/SWAGGER available**: Integrate the tool in yours by means of a robust backend Rest API.
-  Examples of operations include:
-  - **Dead features**: Identify features that are no longer in use.
-  - **Void features**: Determine if a feature model is void. A feature model is considered void if it represents no products, often due to incorrect usage of cross-tree constraints.
-  - **Valid product**: Validate whether a product (i.e., a set of features) belongs to the set of products represented by a feature model. This involves checking if the product conforms to the constraints and structure of the feature model.
-  - **All products**: Generate a complete list of all products.
-  - **Filter**: This operation takes as input a feature model and a configuration (potentially partial) and returns the set of products including the input configuration that can be derived from the model. Note that this operation does not modify the feature model itself.
+### REST / SWAGGER available
+Integrate the tool in yours by means of a robust backend Rest API.
+
+# <i class="fa-solid fa-calculator"></i> Large set of operations
+
+Examples of operations include:
+
+#### **Dead features**
+Identifies features that cannot be included in any valid configuration due to constraints and dependencies in the model.
+
+#### **Core features**
+Identifies features that are present in all valid configurations of the feature model. 
+
+#### **Estimated number of configurations**
+Provides an estimate of the total number of different configurations that can be produced from a feature model by considering all possible combinations of features.
+
+#### **Atomic Sets**
+This operation identifies atomic sets in a feature model. An atomic set is a group of features that always appear together across all configurations of the model.
+
+#### **Filter**
+This operation filters and selects a subset of configurations based on specified criteria. It helps in narrowing down the possible configurations to those that meet certain requirements.
 
 {: .fs-6 .fw-300 }
 
