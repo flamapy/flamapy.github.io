@@ -17,7 +17,7 @@ WebAssembly (often abbreviated as WASM) is a binary instruction format designed 
 The textarea below is intented to write a UVL file than can be later analyzed:
 
 {: .important }
-> Currenlty this website does not support linter in the text area. Take a look con dev console if there is any parsing error of your text (tabs are difficult to be writen in a browser)
+> Currently, this website does not support linter in the text area. Take a look at the dev console to see if there is any parsing error in your text (tabs are difficult to write in a browser)
 
 <div>
 
@@ -70,18 +70,18 @@ constraints
     LOW => !Backup</textarea>
 
 <div>
-	<button class="operation" onclick="flamapy('configurations')" disabled>Get configurations</button>
-	<button class="operation" onclick="flamapy('satisfiable')" disabled>Is satisfiable?</button>
-	<button class="operation" onclick="flamapy('configurations_number')" disabled>How many products there are?</button>
-	<button class="operation" onclick="flamapy('atomic_sets')" disabled>atomic_sets</button>
-	<button class="operation" onclick="flamapy('average_branching_factor')" disabled>average_branching_factor</button>
-	<button class="operation" onclick="flamapy('count_leafs')" disabled>count_leafs</button>
-	<button class="operation" onclick="flamapy('estimated_number_of_configurations')" disabled>estimated_number_of_configurations</button>
-	<button class="operation" onclick="flamapy('leaf_features')" disabled>leaf_features</button>
-	<button class="operation" onclick="flamapy('max_depth')" disabled>max_depth</button>
-	<button class="operation" onclick="flamapy('core_features')" disabled>core_features</button>
-	<button class="operation" onclick="flamapy('dead_features')" disabled>dead_features</button>
-	<button class="operation" onclick="flamapy('false_optional_features')" disabled>false_optional_features</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('configurations')" disabled>Get configurations</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('satisfiable')" disabled>Is satisfiable?</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('configurations_number')" disabled>How many products there are?</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('atomic_sets')" disabled>atomic_sets</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('average_branching_factor')" disabled>average_branching_factor</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('count_leafs')" disabled>count_leafs</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('estimated_number_of_configurations')" disabled>estimated_number_of_configurations</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('leaf_features')" disabled>leaf_features</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('max_depth')" disabled>max_depth</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('core_features')" disabled>core_features</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('dead_features')" disabled>dead_features</button>
+	<button class="operation btn btn-light mr-2 mb-2" onclick="flamapy('false_optional_features')" disabled>false_optional_features</button>
 </div>
 
 <div>
