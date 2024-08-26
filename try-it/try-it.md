@@ -34,4 +34,10 @@ We have deployed a backend solver api, documented useing swagger in the onRender
 
 Google Colab, short for Google Colaboratory, is a cloud-based development environment provided by Google. It offers a Jupyter notebook interface that allows users to write and execute Python code directly in a web browser, eliminating the need for local installations or setups.
 
-**Coming soon**
+[Getting started](https://colab.research.google.com/drive/1sAZO3JjI5cXe1bz659mNaicgubBd_nYg?usp=sharing){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
+[Use the command line](https://colab.research.google.com/drive/1cuPhIcZW2mcQKz1sSmXQTDanEs6rzQQ2?usp=sharing
+){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
+[Use the python framework](https://colab.research.google.com/drive/1p-vp1izbu_I220WOM3S4uqjH1pH83e_Y?usp=sharing
+){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
+[Use the python facade](https://colab.research.google.com/drive/1-G5W6-Szr9SWFvflqJ8a-P82iwrIJwGU?usp=sharing
+){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
