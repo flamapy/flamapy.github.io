@@ -110,6 +110,8 @@ aux_links:
     - "/try-it"
   "GitHub":
     - "//github.com/flamapy/"
+  "Community":
+    - "/community"
   "Contact":
     - "/contact"
   
