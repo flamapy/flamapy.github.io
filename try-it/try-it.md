@@ -17,7 +17,7 @@ The {% include flamapy.html %} library can be easily installed on any local Pyth
 
 We have designed an IDE to work online with your UVL files. No need to upload files to any remote server by using WASM
 
-[Try it online](https://ide.flamapy.orf){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
+[Try it online](https://ide.flamapy.org){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
 
 ## WASM terminal
 
