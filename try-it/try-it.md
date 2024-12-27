@@ -27,7 +27,7 @@ As stated, {% include flamapy.html %} provides a version of all its components a
 
 ## WASM UVL Analysis
 
-We have designed a section where you can test the different analysis operations on an example UVL. All this from your browser.
+We have designed a section where you can learn how to integrate analysis on your webpage development. All this from your browser.
 
 [Try it online]({{site.baseurl}}/try-it/wasm-uvl-analysis){: .btn  .btn-light  .fs-4 .mb-4 .mb-md-0 }
 
