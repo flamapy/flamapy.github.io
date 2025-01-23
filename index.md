@@ -80,8 +80,8 @@ This operation filters and selects a subset of configurations based on specified
   <a href="https://www.uma.es/" target="_blank" class="entity">
     <img src="/assets/images/university_of_malaga.svg" alt="University of Malaga">
   </a>
-  <a href="https://www.uni-graz.at/en/" target="_blank" class="entity">
-    <img src="/assets/images/university_of_graz.svg" alt="University of Graz">
+  <a href="https://www.tugraz.at/" target="_blank" class="entity">
+    <img src="/assets/images/tugraz.png" alt="Graz University of Technology">
   </a>
   <a href="https://www.uned.es/" target="_blank" class="entity">
     <img src="/assets/images/uned.jpg" alt="UNED">
